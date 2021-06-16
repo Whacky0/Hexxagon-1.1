@@ -33,9 +33,9 @@ public class WinLoseIA : MonoBehaviour
 
     private void Update()
     {
-        var pvp = ClickCoord.instance;
+        var pvc = ClickCoord.instance;
 
-        if (pvp.actualizarTurno == false)
+        if (pvc.actualizarTurno == false)
         {
             chequearColores();
             winLose();

@@ -66,7 +66,7 @@ public class ShaderManager : MonoBehaviour
 
     private IEnumerator tintTime()
     {
-        yield return new WaitForSeconds(0.0001f);
+        yield return new WaitForSeconds(0.01f);
         var shaderTint = ShaderEffect_Tint.instance;
         var actualPieces = ActualPieces.instancia;
 
@@ -135,7 +135,7 @@ public class ShaderManager : MonoBehaviour
 
     private IEnumerator crt()
     {
-        yield return new WaitForSeconds(0.001f);
+        yield return new WaitForSeconds(0.01f);
         var crt = ShaderEffect_CRT.instance;
         int randomCrt;
 
@@ -195,7 +195,7 @@ public class ShaderManager : MonoBehaviour
     private IEnumerator corruptedVram()
     {
 
-        yield return new WaitForSeconds(0.001f);
+        yield return new WaitForSeconds(0.01f);
         var vram = ShaderEffect_CorruptedVram.instance;
 
         if (vram.shift > -25 && activoshader)
@@ -214,7 +214,7 @@ public class ShaderManager : MonoBehaviour
     }
     private IEnumerator corruptedVram2()
     {
-        yield return new WaitForSeconds(0.001f);
+        yield return new WaitForSeconds(0.01f);
         var vram = ShaderEffect_CorruptedVram.instance;
 
         if (vram.shift < 28 && activoshader)
